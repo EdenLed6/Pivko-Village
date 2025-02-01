@@ -1,0 +1,576 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  
+  body {
+    margin: 0;
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    background-color: #F1F0E8; /* White */
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+
+main {
+    display: block;
+    box-sizing: border-box;
+}
+
+header {
+    display: block;
+    box-sizing: border-box;
+}
+
+li {
+    text-align: left;
+}
+.header-container {
+    text-align: center;
+    position: relative;
+}
+
+.header-container p {
+    color: #666;
+    margin: 2px 0;
+}
+
+.background-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+p {
+
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.space-below{
+    padding: 30px;
+}
+
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #444;
+    position: relative;
+    font-size: 1.8rem;
+}
+
+h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #B3C8CF;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+
+.navbar {
+    background-color: #89A8B2;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    height: 5rem; 
+    padding: 0;
+  }
+  
+  .logo {
+    max-width: 4rem; 
+    max-height: 4rem;  
+    height: auto;  
+    display: block;   
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .navbar-nav {
+    gap: 1rem; 
+  }
+
+  .nav-link {
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .nav-link:hover {
+    color: white;
+  }
+
+  .navbar-collapse {
+    background-color: #89A8B2; /* Ensure collapsed menu has the same background color */
+    color: white;
+  }
+  
+  /* language switch*/
+.language-switch {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.language-switch .lang-option {
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+}
+
+.language-switch .lang-option:hover {
+    color: #f3ead0;
+}
+
+
+  .top-container {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .container{
+    width: 100%;
+    display: inline-block;
+    max-width: 70rem;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .bottom-container{
+    background-color: hsla(200, 25%, 62%, 0.4);
+    
+  }
+  
+
+blockquote {
+    font-size: 1.5rem;
+    color: #888;
+    text-align: center;
+    margin: 0px;
+}
+
+#favorites {
+    background-color: #fff8e4;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px
+}
+
+
+
+/* Lightbox (Full Image View) */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox:target {
+    display: flex; /* Show lightbox when target is clicked */
+}
+
+/* Close Button */
+.lightbox .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem; /* הגדלת גודל הכפתור */
+    color: white; /* צבע לבן */
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6); /* רקע כהה */
+    padding: 10px; /* ריווח פנימי */
+    border-radius: 100%; /* עיצוב עגול */
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* צל קל */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    z-index: 3000; /* להבטיח שהכפתור מעל הכל */
+}
+
+.lightbox .close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* צבע רקע לבן */
+    color: black; /* טקסט שחור */
+    transform: scale(1.2); /* אפקט הגדלה */
+}
+
+/* Navigation Buttons */
+.lightbox .nav-btn {
+    position: absolute;
+    top: 50%;
+    
+    font-size: 3rem; /* הגדלת גודל הכפתור */
+    color: white; /* צבע לבן */
+    background-color: rgba(0, 0, 0, 0.6); /* רקע כהה */
+    padding: 10px; /* ריווח פנימי */
+    border-radius: 50%; /* עיצוב עגול */
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* צל קל */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.lightbox .navi-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* צבע רקע לבן */
+    color: black; /* טקסט שחור */
+    transform: scale(1.2); /* אפקט הגדלה */
+}
+
+.lightbox .nav-btn.prev {
+    left: 10rem; /* מיקום משמאל */
+}
+
+.lightbox .nav-btn.next {
+    right: 10rem; /* מיקום מימין */
+}
+
+/* Masonry Grid */
+.masonry-grid {
+    column-count: 4; /* Number of columns */
+    column-gap: 15px; /* Gap between columns */
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+.masonry-grid img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.masonry-grid img:hover {
+    transform: scale(1.05); /* Add a hover effect */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .masonry-grid {
+        column-count: 2; /* Reduce to 2 columns for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .masonry-grid {
+        column-count: 1; /* Single column for very small screens */
+    }
+}
+
+.custom-btn {
+    background-color: #89A8B2; /* Default background color */
+    width: 100%;
+    color: #fff; /* Text color */
+    border: 2px solid #89A8B2; /* Border color */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    text-decoration: none; /* Remove underline for links */
+    display: inline-block; /* Ensure proper spacing */
+  }
+
+  .custom-btn1 {
+    background-color: #89A8B2; /* Default background color */
+    color: #fff; /* Text color */
+    border: 2px solid #89A8B2; /* Border color */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    text-decoration: none; /* Remove underline for links */
+    display: inline-block; /* Ensure proper spacing */
+  }
+  
+  /* Hover effect */
+  .custom-btn:hover {
+    background-color: #657F8A; /* Darker background on hover */
+    color: #fff; /* Keep text color white */
+    border-color: #657F8A; /* Match border with background on hover */
+    text-decoration: none; /* Ensure no underline */
+  }
+
+ /* Center the grid properly */
+.attractions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ensures proper centering */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Ensure All Cards are Same Height */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes content evenly */
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    width: 300px; /* Fix width for uniformity */
+    min-height: 200px; /* Ensures consistent height */
+    flex: 1 1 300px; /* Makes cards flexible */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #444;
+}
+.card h4 {
+    color: #444;
+    text-align: center;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Ensure Button Stays at Bottom */
+.card .btn-custom {
+    background-color: #89A8B2;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Pushes the button to the bottom */
+    transition: background 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #657F8A;
+    color: white;
+}
+
+
+/* Multi-Image Carousel Styling */
+#galleryCarousel {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.image-container-Carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.image-container-Carousel img{
+    width: 30%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Contact Form Styling */
+.contact-form-container {
+    background-color: #B3C8CF; /* Matching design color */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+.contact-form-container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-form-container p {
+    font-size: 1.2rem;
+    
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Grid layout - Two columns */
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* Input fields */
+.contact-form-grid input,
+.contact-form-grid select,
+.contact-form-grid textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #89A8B2; /* Matching border color */
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #444;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Field labels */
+.contact-form-grid label {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* The comments field will span two columns */
+.full-width {
+    grid-column: span 2;
+}
+
+/* Submit button */
+.contact-form-container button {
+    background-color: #89A8B2; /* Gold-brown matching color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form-container button:hover {
+    background-color: #657F8A; /* Darker shade */
+}
+
+/* Ensure Flexbox stacks properly on small screens */
+@media (max-width: 992px) {
+    .contact-accommodation-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-container,
+    .accommodation-container {
+        width: 100%;
+    }
+}
+
+/* Ensure the booking section aligns properly */
+.contact-accommodation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Ensure the form and text sections take equal width */
+.contact-form-container, 
+.accommodation-container {
+    flex: 1;
+    min-width: 45%;
+}
+
+/* Fix the width for smaller screens */
+@media (max-width: 992px) {
+    .contact-accommodation-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-container,
+    .accommodation-container {
+        width: 100%;
+    }
+}
+
+
+
+
