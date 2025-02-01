@@ -65,12 +65,150 @@
     </header>
 
     <main>
+        <section id="Book">
+            <div class="container about-section">
+                <h2>Welcome to Pivko Village</h2><br>
+
+                    <!-- Accommodation Info -->
+                    <div class="col-md-3 accommodation-container">
+                       
+                        <div class="pricing-container">
+                            <h2>Attractive prices for the opening year</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Unit Type</th>
+                                        <th>Maximum Guests</th>
+                                        <th>Per Night</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Studio</strong></td>
+                                        <td>2</td>
+                                        <td>70 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Family Suite</strong></td>
+                                        <td>2 adults + 2 children</td>
+                                        <td>95 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Villa</strong></td>
+                                        <td>10</td>
+                                        <td>450 €</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><strong>Minimum 5 nights</strong></p>
+                            <p><strong>July, August and holidays are 35% more</strong></p>
+                        </div>
+                        
+                    </div>
+               
+
+            <h2>Book Your Vacation Now</h2><br>
+            <!-- Accommodation Info -->
+                    <div class="col-md-3 accommodation-container">
+                        <h3>Luxury Villa</h3>
+                        <p>A spacious 200-square-meter villa with 5 bedrooms, 3.5 bathrooms, a fully equipped kitchen, a
+                            private pool, a jacuzzi, and a professional bar. The villa offers full privacy with a gated
+                            entrance and security system.</p>
+                            <div class="mt-3 text-center">
+                                <a href="./accommodation.html#luxury-villa" class="btn custom-btn">Learn More about our Luxury Villa</a>
+                            </div><br>
+
+                        <h3>Luxury Family Suite</h3>
+                        <p>40-square-meter zimmers featuring a separate bedroom, living room, kitchenette, bathroom, and
+                            private balcony. Perfect for families with up to 4 people, with 2 connected units available
+                            for larger groups.
+                        </p>
+                        <div class="mt-3 text-center">
+                            <a href="./accommodation.html#luxury-family-suite" class="btn custom-btn">Learn More about our Luxury Family Suite</a>
+                        </div><br>
+
+                        <h3>Luxury Studio</h3>
+                        <p>A cozy 18-square-meter studio with a convertible sofa bed, kitchenette, private bathroom,
+                            balcony, and dedicated parking space. Ideal for couples or solo travelers.</p>
+
+                        <div class="mt-3 text-center">
+                            <a href="./accommodation.html#luxury-studio" class="btn custom-btn">Learn More about our Luxury Studio</a>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row contact-accommodation-container">
+                <!-- Contact Form -->
+                <div class="col-md-3">
+                    <div class="contact-form-container">
+                        <h2>Book Now</h2>
+                        <p>For those ordering via email <br> <strong>5% Discount for online reservations</strong>
+                        </p>
+
+                        <form method="post" name="contact-form">
+                            <div class="contact-form-grid">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div>
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div>
+                                    <label for="entry-date">Entry Date</label>
+                                    <input type="date" id="entry-date" name="entry_date" required>
+                                </div>
+                                <div>
+                                    <label for="departure-date">Departure Date</label>
+                                    <input type="date" id="departure-date" name="departure_date" required>
+                                </div>
+                                <div>
+                                    <label for="interested-in">Interested In</label>
+                                    <select id="interested-in" name="interest">
+                                        <option value="luxury-villa">Luxury Villa</option>
+                                        <option value="family-suite">Luxury Family Suite</option>
+                                        <option value="studio">Luxury Studio</option>
+                                    </select>
+                                </div>
+                                <div class="full-width">
+                                    <label for="comments">Special Comments</label>
+                                    <textarea id="comments" name="comments" placeholder="Your special requests..."
+                                        rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+            <!-- Booking Button -->
+            <div class="mt-4 text-center">
+                <h4>For those who want to order directly from Booking.com, please use this link:</h4><br>
+                <a href="https://www.booking.com/Share-6TYX99" class="btn custom-btn1" target="_blank"
+                    rel="noopener noreferrer">
+                    Book Now on Booking.com
+                </a>
+                <br><br>
+            </div>
+        </section>
+
+
         <section id="Home">
             <div class="container about-section">
                 <div class="row align-items-center">
                     <!-- Left Column: Text -->
                     <div class="col-md-6">
-                        <h2>Welcome to Pivko Village</h2>
+                        <h2>About Us</h2>
                         <p>
                             Experience the northern coast of Crete from your own private resort.
                             With all the amenities of a luxury home, the Pivko Holiday Village offers
@@ -177,100 +315,7 @@
         </section>
 
     
-        <section id="Book">
-            <div class="container about-section">
-                <h2>Book Your Vacation Now</h2><br>
-
-                <div class="row contact-accommodation-container">
-                    <!-- Contact Form -->
-                    <div class="col-lg-6 col-md-12">
-                        <div class="contact-form-container">
-                            <h2>Book Now</h2>
-                            <p>For those ordering via email <br> <strong>5% Discount for online reservations</strong>
-                            </p>
-
-                            <form method="post" name="contact-form">
-                                <div class="contact-form-grid">
-                                    <div>
-                                        <label for="name">Name</label>
-                                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                                    </div>
-                                    <div>
-                                        <label for="phone">Phone</label>
-                                        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
-                                    </div>
-                                    <div>
-                                        <label for="email">Email</label>
-                                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                                    </div>
-                                    <div>
-                                        <label for="entry-date">Entry Date</label>
-                                        <input type="date" id="entry-date" name="entry_date" required>
-                                    </div>
-                                    <div>
-                                        <label for="departure-date">Departure Date</label>
-                                        <input type="date" id="departure-date" name="departure_date" required>
-                                    </div>
-                                    <div>
-                                        <label for="interested-in">Interested In</label>
-                                        <select id="interested-in" name="interest">
-                                            <option value="luxury-villa">Luxury Villa</option>
-                                            <option value="family-suite">Luxury Family Suite</option>
-                                            <option value="studio">Luxury Studio</option>
-                                        </select>
-                                    </div>
-                                    <div class="full-width">
-                                        <label for="comments">Special Comments</label>
-                                        <textarea id="comments" name="comments" placeholder="Your special requests..."
-                                            rows="3"></textarea>
-                                    </div>
-                                </div>
-
-                                <button type="submit">Send</button>
-                            </form>
-                        </div>
-                    </div>
-
-                    <!-- Accommodation Info -->
-                    <div class="col-md-6 col-md-12 accommodation-container">
-                        <h3>Luxury Villa</h3>
-                        <p>A spacious 200-square-meter villa with 5 bedrooms, 3.5 bathrooms, a fully equipped kitchen, a
-                            private pool, a jacuzzi, and a professional bar. The villa offers full privacy with a gated
-                            entrance and security system.</p>
-                            <div class="mt-3 text-center">
-                                <a href="./accommodation.html#luxury-villa" class="btn custom-btn">Learn More about our Luxury Villa</a>
-                            </div><br>
-
-                        <h3>Luxury Family Suite</h3>
-                        <p>40-square-meter zimmers featuring a separate bedroom, living room, kitchenette, bathroom, and
-                            private balcony. Perfect for families with up to 4 people, with 2 connected units available
-                            for larger groups.
-                        </p>
-                        <div class="mt-3 text-center">
-                            <a href="./accommodation.html#luxury-family-suite" class="btn custom-btn">Learn More about our Luxury Family Suite</a>
-                        </div><br>
-
-                        <h3>Luxury Studio</h3>
-                        <p>A cozy 18-square-meter studio with a convertible sofa bed, kitchenette, private bathroom,
-                            balcony, and dedicated parking space. Ideal for couples or solo travelers.</p>
-
-                        <div class="mt-3 text-center">
-                            <a href="./accommodation.html#luxury-studio" class="btn custom-btn">Learn More about our Luxury Studio</a>
-                        </div><br>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Booking Button -->
-            <div class="mt-4 text-center">
-                <h4>For those who want to order directly from Booking.com, please use this link:</h4><br>
-                <a href="https://www.booking.com/Share-6TYX99" class="btn custom-btn1" target="_blank"
-                    rel="noopener noreferrer">
-                    Book Now on Booking.com
-                </a>
-                <br><br>
-            </div>
-        </section>
+        
 
 
         <section id="Gallery"></section>
