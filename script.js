@@ -73,9 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Ensure navbar toggler opens and closes the menu correctly
-    navbarToggler.addEventListener("click", () => {
-        const isExpanded = navbarToggler.getAttribute("aria-expanded") === "true";
-        if (!isExpanded) {
+   navbarToggler.addEventListener("click", function () {
+        if (navbarCollapse.classList.contains("show")) {
+            new bootstrap.Collapse(navbarCollapse).hide();
+        } else {
             new bootstrap.Collapse(navbarCollapse).show();
         }
     });
